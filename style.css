@@ -1,0 +1,199 @@
+* {
+    text-align:center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#container {
+    text-align:center;
+}
+
+.airspace {
+  margin-top: 2%;
+  padding-left: 2%;
+  text-align: left;
+  font-size: 2em;
+}
+
+.buildingBlock {
+    display:inline-block;
+    margin:2px 2px;
+    background-color:#ECECEC;
+    border:1px solid #ECECEC;
+    text-align: center;
+    vertical-align: middle;
+    word-wrap: break-word;
+    font-weight: 500;
+    width:150px;
+    height: 100px;
+    line-height: 100px;
+
+}
+
+
+
+/*green*/
+.modal-body-green, #block-4, #block-10, #block-13, #block-16, #block-24 {
+  background-color: #24E86E
+}
+
+/*blue*/
+.modal-body-blue, #block-3, #block-7, #block-11, #block-19, #block-25 {
+  background-color: #6DF4FF
+}
+
+/*yellow*/
+.modal-body-yellow, #block-5, #block-6, #block-14, #block-20, #block-22 {
+  background-color: #FFFC2A
+}
+
+/*orange*/
+.modal-body-orange, #block-2, #block-8, #block-15, #block-17, #block-21 {
+  background-color: #FF9927
+
+}
+
+/*pink*/
+.modal-body-pink, #block-1, #block-9, #block-12, #block-18, #block-23 {
+  background-color: #FF4B96
+}
+
+/*bootstrap modal override, responsive modal stretch to fit screen*/
+.modal-lg {
+  width: 90%;
+  text-align: center;
+}
+
+/*info modal styling*/
+.modal-body > h2, .modal-body > p {
+  text-align: justify;
+}
+
+.modal-explanation {
+  background-color: white;
+  text-align: justify;
+  padding: 7.5% 7.5% 7.5% 7.5%;
+}
+
+.modal-explanation > p {
+  text-align: justify;
+}
+
+.modal-explanation > ul > li {
+  text-align: left;
+}
+
+.modal-body > h2 {
+  font-weight: 500;
+}
+
+
+
+/*media queuery adjustments*/
+  /*small screen*/
+    @media (min-width: 0px) {
+      .buildingBlock {
+          width:65px;
+          height:45px;
+          line-height: 45px;
+          font-size: 1.25em;
+      }
+
+      .vcode {
+        font-size: 2.25em;
+        padding-top: 2.25em;
+      }
+
+      .vcode-gap {
+        padding-top: .75em;
+      }
+
+      .vcode-text {
+        font-size: 1.75em;
+        padding-bottom: 2.25em;
+      }
+
+      .modal-explanation, .modal-body > p {
+        font-size: 1em;
+      }
+    }
+  /*medium screen*/
+    @media (min-width: 550px) {
+      .buildingBlock {
+          width:100px;
+          height:75px;
+          line-height: 75px;
+          font-size: 2em;
+      }
+
+      .vcode {
+        font-size: 3em;
+        padding-top: 3em;
+      }
+
+      .vcode-gap {
+        padding-top: 2em;
+      }
+
+      .vcode-text {
+        font-size: 2em;
+        padding-bottom: 3em;
+      }
+
+      .modal-explanation, .modal-body > p {
+        font-size: 2em;
+      }
+    }
+  /*tablet screen*/
+    @media (min-width: 800px) {
+      .buildingBlock {
+          width:150px;
+          height:100px;
+          line-height: 100px;
+          font-size: 3.3em;
+      }
+
+      .vcode {
+        font-size: 4.3em;
+        padding-top: 2.5em;
+        font-weight: 700;
+      }
+
+      .vcode-gap {
+        padding-top: 4em;
+      }
+
+      .vcode-text {
+        font-size: 3.3em;
+        padding-bottom: 2.5em;
+      }
+
+      .modal-explanation, .modal-body > p {
+        font-size: 2em;
+      }
+    }
+
+  /*desktop screen*/
+    @media (min-width: 1305px) {
+      .buildingBlock {
+          width:250px;
+          height:175px;
+          line-height: 175px;
+          font-size: 5em;
+      }
+
+      .vcode {
+        font-size: 6.5em;
+      }
+
+      .vcode-gap {
+        padding-top: 4em;
+      }
+
+      .vcode-text {
+        font-size: 5.5em;
+      }
+
+      .modal-explanation, .modal-body > p {
+        font-size: 2.5em;
+      }
+    }
